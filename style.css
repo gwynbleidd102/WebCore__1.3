@@ -28,6 +28,15 @@
   font-style: normal;
 }
 
+:root {
+  --main-gray: #F8F8F8;
+  --main-white: #FFF;
+  --divider-gray: #EAEAEA;
+  --cyan-title: #41F6D7;
+  --black-text: #1B1C21;
+}
+
+
 html {
   box-sizing: border-box;
 }
@@ -46,7 +55,7 @@ body {
 
 @media screen and (min-width: 1120px) {
   body {
-    background-color: #F8F8F8;
+    background-color: var(--main-gray);
   }
 }
 
@@ -161,7 +170,7 @@ li {
   width: 2px;
   height: 32px;
   border-radius: 1px;
-  background: #EAEAEA;
+  background: var(--divider-gray);
   position: absolute;
   top: 4px;
   left: -22px;
@@ -185,7 +194,7 @@ li {
     width: 2px;
     height: 32px;
     border-radius: 1px;
-    background: #EAEAEA;
+    background: var(--divider-gray);
     position: absolute;
     top: 4px;
     left: 60px;
@@ -262,8 +271,14 @@ li {
   background-color: #F8F8F8;
   display: flex;
   padding: 0;
-  /* padding: 42px 32px 0 0; */
   align-items: center;
+  color: var(--black-text);
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 .main__title-repair-text,
@@ -288,7 +303,7 @@ li {
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -0.6px;
-  color: #1B1C21;
+  color: var(--black-text);
   position: relative;
 }
 
@@ -298,7 +313,7 @@ li {
   left: 0;
   width: 4px;
   height: 40px;
-  background: #41F6D7;
+  background: var(--cyan-title);
   border-radius: 0px 6px 6px 0;
 }
 
@@ -398,7 +413,7 @@ li {
 .navigation__item--current {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
-  background: #FFF;
+  background: var(--main-white);
 }
 
 
@@ -439,7 +454,7 @@ li {
 .about__info-text--768 {
   margin: 0;
   margin-bottom: 16px;
-  color: #1B1C21;
+  color: var(--black-text);
   font-family: 'TT Lakes Regular', serif;
   font-size: 0.875rem;
   font-style: normal;
@@ -482,7 +497,7 @@ li {
   text-decoration: none;
   border: none;
   background: #F8F8F8;
-  color: #1B1C21;
+  color: var(--black-text);
   font-family: 'TT Lakes Medium';
   font-size: 16px;
   font-weight: 500;
