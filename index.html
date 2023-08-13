@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CPS</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <header class="header">
+        <div class="header__left-block">
+          <button class="header__left-burger-btn">
+            <img src="icons/burger.svg" alt="Кнопка вызова бокового меню">
+          </button>
+          <a class="header__logo-img">
+            <img src="icons/Group.svg" height="50.815px" width="96.5px" alt="Логотип компании CSP">
+          </a>
+        </div>
+        <div class="header__right-btns">
+          <div class="header__right-hidden-btns">
+            <button class="header__right-call-btn">
+              <img src="icons/call.svg" alt="Кнопка заказа звонка">
+            </button>
+            <button class="header__right-message-btn">
+              <img src="icons/chat.svg" alt="Кнопка открытия формы обратной связи">
+            </button>
+            <button class="header__right-profile-btn">
+              <img src="icons/profile.svg" alt="Кнопка открытия профиля">
+            </button>
+          </div> 
+          <div class="header__right-visible-btns">
+            <button class="header__right-repair-btn">
+              <span class="header__right-repair-text"></span>
+              <img src="icons/repair.svg" alt="Кнопка оставить заявку">
+            </button>
+            <button class="header__right-status-btn">
+              <span class="header__right-status-text"></span>
+              <img src="icons/checkstatus.svg" alt="Кнопка проверить статус ремонта">
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <div class="main__title-block">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__title-btns">
+            <button class="main__title-repair-btn">
+              <span class="main__title-repair-text">Оставить заявку</span>
+              <img src="icons/repair.svg">
+            </button>
+            <button class="main__title-status-btn">
+              <span class="main__title-status-text">Статус ремонта</span>
+              <img src="icons/checkstatus.svg">
+            </button>
+          </div>
+        </div>
+        
+
+        <div class="main__navigation">
+          <ul class="navigation__list">
+              <li class="navigation__item navigation__item--current">
+                  <a href="#" class="navigation__link ">Ремонтируемые устройства</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Дополнительные услуги</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Цены на услуги</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Адреса сервисных центров</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Специальные цены</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Отзывы</a>
+              </li>
+          </ul>
+      </div>
+      
+      <section class="about">
+        <div class="about__info">
+          <p class="about__info-text">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+          </p>
+            <p class="about__info-text--768">Мы успешно работаем с 1992 года и заслужили
+            репутацию надежного партнера<span class="about__info-text--1120">,что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+            родным и близким.</span>
+          </p>
+          <button class="about__info-expand-btn">Читать далее</button>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img" src="images/photo1.png" alt="Вывеска компании и часы работы">
+        </div>
+      </section>
+
+      </main>
+
+    </div>
+
+  </body>
+</html>
