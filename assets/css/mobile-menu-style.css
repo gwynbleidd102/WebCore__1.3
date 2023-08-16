@@ -1,0 +1,105 @@
+/* Import */
+
+@import url(fonts.css);
+@import url(vars.css);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'TT Lakes Regular', serif;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+button {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+/* .sidenav {
+
+} */
+
+/* sidenav header */
+
+.mobile-menu {
+  background: var(--main-white);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), 
+              -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  width: 320px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu__header {
+  display: flex;
+  padding: 18.73px 24px 0 24px;
+  column-gap: 78.27px;
+  align-items: center;  
+  margin-bottom: 50.27px;
+}
+
+.mobile-menu__left-items {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.mobile-menu__back-btn {
+  background: url(../images/icons/close-burger.svg);
+  width: 40px;
+  height: 40px;
+}
+.mobile-menu__logo {
+  background: url(../images/icons/Group.svg);
+  width: 97px;
+  height: 51px;
+}
+.mobile-menu__search-btn {
+  background: url(../images/icons/search.svg);
+  height: 40px;
+  width: 40px;
+}
+
+/* sidenav main */
+
+.sidenav__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-left: 24px;  
+}
+
+.sidenav__links-item {
+  color: var(--black-text);
+  font-family: 'TT Lakes Regular' , serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+
+

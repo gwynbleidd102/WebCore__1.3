@@ -1,4 +1,5 @@
-@font-face {
+@import url(fonts.css);
+/* @font-face {
   font-family: 'TT Lakes Regular';
   src: url('fonts/TTLakes-Regular.eot');
   src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
@@ -26,11 +27,11 @@
        url('fonts/TTLakes-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 :root {
   --main-gray: #F8F8F8;
-  --main-white: #FFF;
+  --main-white: #FFFFFF;
   --divider-gray: #EAEAEA;
   --cyan-title: #41F6D7;
   --black-text: #1B1C21;
@@ -111,7 +112,7 @@ li {
   height: 40px;
   width: 40px;
   background: var(--main-white);
-  background-image: url(icons/burger.svg);
+  background-image: url(/assets/images/icons/burger.svg);
 }
 
 .header__logo-img { 
@@ -121,7 +122,7 @@ li {
   width: 96.5px;
   height: 50.8px;
   background: var(--main-white);
-  background-image: url(icons/Group.svg);
+  background-image: url(/assets/images/icons/Group.svg);
 }
 
 .header__right-btns {
@@ -152,7 +153,7 @@ li {
     height: 40px;
     border: none;
     background: var(--main-white);
-    background-image: url(icons/repair.svg);
+    background-image: url(/assets/images/icons/repair.svg);
     
 }
 
@@ -165,7 +166,7 @@ li {
   height: 40px;
   border: none;
   background: var(--main-white);
-  background-image: url(icons/checkstatus.svg);
+  background-image: url(/assets/images/icons/checkstatus.svg);
 
 }
 
@@ -224,7 +225,7 @@ li {
     height: 40px;
     border: none;
     background: var(--main-white);
-    background-image: url(icons/call.svg);  
+    background-image: url(/assets/images/icons/call.svg);  
   }
 
   .header__right-message-btn {
@@ -232,7 +233,7 @@ li {
     height: 40px;
     border: none;
     background: var(--main-white);
-    background-image: url(icons/chat.svg);
+    background-image: url(/assets/images/icons/chat.svg);
   }
 
   .header__right-profile-btn {
@@ -240,7 +241,7 @@ li {
     height: 40px;
     border: none;
     background: var(--main-white);
-    background-image: url(icons/profile.svg);
+    background-image: url(/assets/images/icons/profile.svg);
   }
 }
 
@@ -288,8 +289,7 @@ li {
   width: 173px;
   height: 40px;
   border: none;
-  /* background: #ffffff; */
-  background: url(icons/repair.svg) no-repeat right center;
+  background: url(/assets/images/icons/repair.svg) no-repeat right center;
   padding-right: 48px;
 }
 
@@ -297,8 +297,7 @@ li {
   width: 168px;
   height: 40px;
   border: none;
-  /* background: #ffffff; */
-  background: url(icons/checkstatus.svg) no-repeat right center;
+  background: url(/assets/images/icons/checkstatus.svg) no-repeat right center;
   padding-right: 49px;
 }
 
@@ -528,7 +527,7 @@ li {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(icons/expand.svg);
+  background-image: url(../images/icons/expand.svg);
   background-repeat: no-repeat;
 }
 
