@@ -108,11 +108,20 @@ li {
 .header__left-burger-btn {
   display: flex;
   padding: 0;
+  height: 40px;
+  width: 40px;
+  background: var(--main-white);
+  background-image: url(icons/burger.svg);
 }
 
 .header__logo-img { 
   display: flex; 
   align-self: center;
+  padding: 0;
+  width: 96.5px;
+  height: 50.8px;
+  background: var(--main-white);
+  background-image: url(icons/Group.svg);
 }
 
 .header__right-btns {
@@ -139,6 +148,12 @@ li {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--main-white);
+    background-image: url(icons/repair.svg);
+    
 }
 
 .header__right-status-btn {
@@ -146,23 +161,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--main-white);
+  background-image: url(icons/checkstatus.svg);
 
-.header__right-repair-text {
-  display: none;
-  margin-right: 8px;
-}
-
-.header__right-status-text {
-  display: none;
-  margin-right: 8px;
-}
-
-@media screen and (min-width: 1120px) {
-  .header__right-repair-text,
-  .header__right-status-text  {
-    display: flex;
-  }
 }
 
 .header__right-repair-btn::before{
@@ -214,36 +218,37 @@ li {
     display: flex;
     padding: 0;
   }
+
+  .header__right-call-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--main-white);
+    background-image: url(icons/call.svg);  
+  }
+
+  .header__right-message-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--main-white);
+    background-image: url(icons/chat.svg);
+  }
+
+  .header__right-profile-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--main-white);
+    background-image: url(icons/profile.svg);
+  }
 }
 
 @media screen and (min-width: 1120px) {
-  /* .header__left-block,
-  .header__right-hidden-btns {
-    display: none;
-  } */
-  
+   
   .header {
     display: none;
-    /* position: absolute;
-    border: none;
-    top: 18px;
-    left: -43px; */
   }
-
-  /* .header__right-visible-btns {
-    column-gap: 0;
-  }
-
-  .header__right-repair-btn,
-  .header__right-status-btn {
-    background-color: #F8F8F8;
-    margin-left: 32px;
-  }
-
-  .header__right-repair-btn::before {
-    display: none;
-  } */
-
 }
 
 
@@ -269,9 +274,7 @@ li {
 .main__title-repair-btn,
 .main__title-status-btn {
   background-color: #F8F8F8;
-  display: flex;
   padding: 0;
-  align-items: center;
   color: var(--black-text);
   font-family: 'TT Lakes Medium';
   font-size: 16px;
@@ -281,9 +284,22 @@ li {
   letter-spacing: -0.2px;
 }
 
-.main__title-repair-text,
-.main__title-status-text {
-  margin-right: 8px;
+.main__title-repair-btn {
+  width: 173px;
+  height: 40px;
+  border: none;
+  /* background: #ffffff; */
+  background: url(icons/repair.svg) no-repeat right center;
+  padding-right: 48px;
+}
+
+.main__title-status-btn {
+  width: 168px;
+  height: 40px;
+  border: none;
+  /* background: #ffffff; */
+  background: url(icons/checkstatus.svg) no-repeat right center;
+  padding-right: 49px;
 }
 
 @media screen and (min-width: 1120px) {
