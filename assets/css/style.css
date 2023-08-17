@@ -1,42 +1,5 @@
 @import url(fonts.css);
-/* @font-face {
-  font-family: 'TT Lakes Regular';
-  src: url('fonts/TTLakes-Regular.eot');
-  src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-       url('fonts/TTLakes-Regular.woff') format('woff'),
-       url('fonts/TTLakes-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Lakes Medium';
-  src: url('fonts/TTLakes-Medium.eot');
-  src: url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-       url('fonts/TTLakes-Medium.woff') format('woff'),
-       url('fonts/TTLakes-Medium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Lakes Bold';
-  src: url('fonts/TTLakes-Bold.eot');
-  src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-       url('fonts/TTLakes-Bold.woff') format('woff'),
-       url('fonts/TTLakes-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} */
-
-:root {
-  --main-gray: #F8F8F8;
-  --main-white: #FFFFFF;
-  --divider-gray: #EAEAEA;
-  --cyan-title: #41F6D7;
-  --black-text: #1B1C21;
-}
-
+@import url(vars.css);
 
 html {
   box-sizing: border-box;

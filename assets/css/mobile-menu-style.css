@@ -50,6 +50,8 @@ a {
   height: 100vh;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu__header {
@@ -88,18 +90,120 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  padding-left: 24px;  
+  padding-left: 24px;
+  position: relative;
 }
 
 .sidenav__links-item {
   color: var(--black-text);
-  font-family: 'TT Lakes Regular' , serif;
+  font-family: 'TT Lakes Medium' , serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
 }
+
+.sidenav__links-item:first-child::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 4px;
+  height: 32px;
+  background: var(--cyan-title);
+  border-radius: 0px 6px 6px 0;
+}
+
+.sidenav__links-item--current {
+  color: var(--dark-grey);
+}
+
+.sidenav__links-item:last-child {
+  margin-bottom: 32px;
+}
+
+/* sidenav footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 32px 24px;
+  margin-top: auto;
+}
+
+/* footer btns */
+
+.footer__btns {
+  display: flex;
+  column-gap: 16px;
+}
+.footer__call-btn {
+  background-image: url(../images/icons/call.svg);
+  height: 40px;
+  width: 40px;
+  margin-bottom: 16px;
+}
+.footer__chat-btn {
+  background-image: url(../images/icons/chat.svg);
+  height: 40px;
+  width: 40px;
+}
+.footer__profile-btn {
+  background-image: url(../images/icons/profile.svg);
+  height: 40px;
+  width: 40px;
+}
+/*  */
+
+/* footer contacts */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__email {
+  color: var(--black-text);
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+
+.contacts__number{
+  color: var(--black-text);
+  font-family: 'TT Lakes Medium';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+/*  */
+
+/* footer langs */
+
+.languages {
+  display: flex;
+  column-gap: 7px;
+}
+.languages__item {
+  color: var(--black-text);
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.languages__item--current {
+  color: var(--dark-grey);
+}
+/*  */
 
 
 
