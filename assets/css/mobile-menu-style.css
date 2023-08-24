@@ -66,6 +66,7 @@ a {
   background: url(../images/icons/close-burger.svg);
   width: 40px;
   height: 40px;
+  transition: all 0.3s ease;
 }
 .mobile-menu__logo {
   background: url(../images/icons/Group.svg);
@@ -76,6 +77,12 @@ a {
   background: url(../images/icons/search.svg);
   height: 40px;
   width: 40px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu button:hover:not(.languages__item) {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 2px 8px #ff3e79);
 }
 
 /* sidenav main */
@@ -88,17 +95,7 @@ a {
   position: relative;
 }
 
-.sidenav__links-item {
-  color: var(--black-text);
-  font-family: 'TT Lakes Medium' , serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-}
-
-.sidenav__links-item:first-child::before {
+.sidenav__links::before {
   content: '';
   position: absolute;
   left: 0;
@@ -107,6 +104,22 @@ a {
   height: 32px;
   background: var(--cyan-title);
   border-radius: 0px 6px 6px 0;
+}
+
+.sidenav__links-item {
+  color: var(--black-text);
+  font-family: 'TT Lakes Medium' , serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.sidenav__links-item:hover {
+  transform: scale(1.03);  
 }
 
 .sidenav__links-item--current {
@@ -133,20 +146,24 @@ a {
   column-gap: 16px;
 }
 .footer__call-btn {
-  background-image: url(../images/icons/call.svg);
+  background: url(../images/icons/call.svg);
   height: 40px;
   width: 40px;
   margin-bottom: 16px;
+  transition: all 0.3s ease;
 }
 .footer__chat-btn {
-  background-image: url(../images/icons/chat.svg);
+  background: url(../images/icons/chat.svg);
   height: 40px;
   width: 40px;
+  transition: all 0.3s ease;
 }
+
 .footer__profile-btn {
-  background-image: url(../images/icons/profile.svg);
+  background: url(../images/icons/profile.svg);
   height: 40px;
   width: 40px;
+  transition: all 0.3s ease;
 }
 /*  */
 
@@ -167,7 +184,7 @@ a {
   margin-bottom: 12px;
 }
 
-.contacts__number{
+.contacts__number {
   color: var(--black-text);
   font-family: 'TT Lakes Medium';
   font-size: 24px;
@@ -176,6 +193,10 @@ a {
   line-height: 32px;
   letter-spacing: -0.6px;
   margin-bottom: 40px;
+}
+
+.contacts__number:hover {
+  opacity: 0.8;
 }
 /*  */
 
@@ -193,7 +214,15 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
+  background: transparent;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
+
+.languages__item:not(.languages__item--current):hover {
+  transform: translateY(-2px);
+}
+
 .languages__item--current {
   color: var(--dark-grey);
 }
