@@ -1,0 +1,232 @@
+/* Import */
+
+@import url(fonts.css);
+@import url(vars.css);
+
+/* base styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'TT Lakes Regular', serif;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: var(--main-gray);
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* swiper block */
+
+.slider {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.slider__header {
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFF 100%);
+}
+
+.slider__title {
+  color: #7E7E82;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 16px; 
+}
+
+@media screen and (min-width: 768px) {
+  .slider__title {
+    padding: 16px 24px;
+  }
+}
+
+.slider__container {
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider__container {
+    padding: 24px;
+  }
+}
+
+.swiper-wrapper {
+  min-width: 320px;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 24px;
+    max-height: 140px;
+    width: auto;
+    transition: max-height 0.5s ease;
+  }
+  
+  .swiper-wrapper.swiper-wrapper--all-slides {
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+  .swiper-wrapper.swiper-wrapper--all-slides {
+    max-height: 270px;
+  }
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  text-align: center;
+  background: var(--main-white);
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    width: 224px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .swiper-slide {
+    width: 240px;
+  }
+}
+
+
+.swiper-slide__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+/* slide logos */
+
+.swiper-slide__img--lenovo {
+  width: 108px;
+  height: 32px;
+}
+
+.swiper-slide__img--samsung {
+  width: 116px;
+  height: 38.5px;
+}
+.swiper-slide__img--apple {
+  width: 42px;
+  height: 42px;
+  transform: translateY(-4px);
+  
+}
+.swiper-slide__img--viewsonic {
+  width: 128px;
+  height: 21px;
+}
+.swiper-slide__img--bosch {
+  width: 128px;
+  height: 28.6px;
+}
+.swiper-slide__img--hp {
+  width: 42px;
+  height: 42px;
+}
+.swiper-slide__img--acer {
+  width: 94px;
+  height: 24px;
+}
+.swiper-slide__img--sony {
+  width: 128px;
+  height: 25.6px;
+}
+/*  */
+.swiper-slide__go-btn {
+  background: url(../images/icons/go.svg)  no-repeat;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide__go-btn:hover {
+  transform: scale(1.1) rotate(90deg);
+}
+
+.swiper-slide__go-btn:focus {
+  border-radius: 50%;
+}
+
+
+.swiper-pagination  {
+  position: static;
+  padding-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.swiper__expand {
+  display: none;
+}
+
+@media screen and (min-width: 768px){ 
+  .swiper__expand {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .swiper__expand-arrow {
+    background-image: url(../images/icons/expand.svg);
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s ease;
+  }
+
+  .swiper__expand-arrow--rotate {
+    transform: rotate(180deg);
+  }
+  
+  .swiper__expand-btn {
+    color: #1B1C21;
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background: var(--main-gray);
+    display: flex;
+    column-gap: 9px;
+  }
+  
+}
+
