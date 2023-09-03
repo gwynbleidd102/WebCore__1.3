@@ -1,4 +1,5 @@
 :root {
+  /* colors */
   --main-gray: #F8F8F8;
   --main-white: #FFFFFF;
   --divider-gray: #EAEAEA;
@@ -6,4 +7,9 @@
   --black-text: #1B1C21;
   --dark-grey: #7E7E82;
   --swiper-theme-color: #B5B6BC;
+  --block-border-divider: #D9FFF5;
+
+
+  /* screen sizes */
+  --desktop-lg: 1140px;
 }

@@ -1,105 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="assets/css/normalize.min.css">
-  <link rel="stylesheet" href="assets/css/slider.css">  
-  <title>Slider</title>
+  <link rel="stylesheet" href="assets/css/normalize.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/slider.css">  -->
+  <title>CPS</title>
 </head>
 <body>
+  <!-- Общий контейнер контента на странице -->
+  <div class="container">
+    <!-- меню для мобилки и боковое меню после 1440px -->
+    <div class="sidenav">
 
-  <section class="slider">
-    
-    <header class="slider__header">
-      <h2 class="slider__title">Ремонт техники различных брендов</h2>
-    </header>
-
-    <div class="swiper slider__container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--lenovo" src="assets/images/brands/lenovo.png" alt="Логотип Lenovo">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+      <div class="mobile-menu">
+  
+        <header class="mobile-menu__header">
+          <div class="mobile-menu__left-items">
+            <button class="mobile-menu__back-btn" aria-label="Кнопка закрытия меню"></button>
+            <a href="#" class="mobile-menu__logo" aria-label="Логотип компании CPS"></a>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--samsung" src="assets/images/brands/samsung.png" alt="Логотип Samsung">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+          <button class="mobile-menu__search-btn" aria-label="Кнопка поиска"></button>
+        </header>
+  
+        <section class="sidenav__links">
+          <a href="#" class="sidenav__links-item sidenav__links-item--current">Ремонт техники</a>
+          <a href="#" class="sidenav__links-item">Услуги и сервисы</a>
+          <a href="#" class="sidenav__links-item">Корпоративным клиентам</a>
+          <a href="#" class="sidenav__links-item">Продавцам техники</a>
+          <a href="#" class="sidenav__links-item">Партнёрам</a>
+          <a href="#" class="sidenav__links-item">Производителям</a>
+          <a href="#" class="sidenav__links-item">Наши сервисные центры</a>
+          <a href="#" class="sidenav__links-item">Контакты</a>
+        </section>
+  
+        <footer class="mobile-menu__footer">
+  
+          <div class="footer-btns">
+            <button class="footer-btns__call-btn" aria-label="Кнопка заказать звонок"></button>
+            <button class="footer-btns__chat-btn" aria-label="Кнопка формы обратной связи"></button>
+            <button class="footer-btns__profile-btn" aria-label="Кнопка открытия профиля"></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--apple" src="assets/images/brands/apple.png" alt="Логотип Apple">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+  
+          <div class="footer-contacts">
+            <a class="footer-contacts__email" href="mailto:mail@cps.com" aria-label="Адрес электронной почты">mail@cps.com</a>
+            <a class="footer-contacts__number" href="tel:+88008908900" aria-label="Номер горячей линии">8 800 890 8900</a>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--viewsonic" src="assets/images/brands/viewsonic.png" alt="Логотип Viewsonic">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+  
+          <div class="footer-languages">
+            <button class="footer-languages__item footer-languages__item--current" aria-label="Выбрать русский язык">RU</button>
+            <button class="footer-languages__item" aria-label="Выбрать английский язык">EN</button>
+            <button class="footer-languages__item" aria-label="Выбрать китайский язык">CH</button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--bosch" src="assets/images/brands/bosch.png" alt="Логотип Bosch">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--hp" src="assets/images/brands/hp.png" alt="Логотип HP">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--acer" src="assets/images/brands/acer.png" alt="Логотип Acer">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--sony" src="assets/images/brands/sony.png" alt="Логотип Sony">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--lenovo" src="assets/images/brands/lenovo.png" alt="Логотип Lenovo">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--samsung" src="assets/images/brands/samsung.png" alt="Логотип Samsung">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-slide__wrapper">
-            <img class="swiper-slide__img swiper-slide__img--apple" src="assets/images/brands/apple.png" alt="Логотип Apple">
-            <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
-          </div>
-        </div>        
+  
+        </footer>
+  
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="transparent-bg"></div>
+  
     </div>
 
-    <div class="swiper__expand">      
-      <button class="swiper__expand-btn" id="swiper__expand-btn">
-        <span class="swiper__expand-arrow" aria-label="Стрелка для кнопки показать всё"></span>
-        <span class="swiper__expand-btn-text">Показать всё</span>
-      </button>
-    </div>
-    
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="assets/scripts/swiper-script.js"></script>
+    <div class="content">
+      <header class="header">
+        <div class="header__left-block">
+          <button class="header__left-burger-btn" aria-label="Кнопка открытия меню"></button>
+          <a class="header__logo-img" aria-label="Логотип компании CPS"></a>
+        </div>
+        <div class="header__right-btns">
+          <div class="header__right-hidden-btns">
+            <button class="header__right-call-btn" aria-label="Кнопка заказать звонок"></button>
+            <button class="header__right-message-btn" aria-label="Кнопка формы обратной связи"></button>
+            <button class="header__right-profile-btn" aria-label="Кнопка открытия профиля"></button>
+          </div>
+          <div class="header__right-visible-btns">
+            <button class="header__right-repair-btn" aria-label="Кнопка оставить заявку"></button>
+            <button class="header__right-status-btn" aria-label="Кнопка проверить статус ремонта"></button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__title-block">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__title-btns">
+            <button class="main__title-repair-btn" aria-label="Кнопка оставить заявку">Оставить заявку</button>
+            <button class="main__title-status-btn" aria-label="Кнопка проверить статус ремонта">Статус ремонта</button>
+          </div>
+        </div>
+      
+        <div class="main__navigation">
+          <ul class="navigation__list">
+              <li class="navigation__item navigation__item--current">
+                  <a href="#" class="navigation__link ">Ремонтируемые устройства</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Дополнительные услуги</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Цены на услуги</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Адреса сервисных центров</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Специальные цены</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link">Отзывы</a>
+              </li>
+          </ul>
+        </div>
+      
+        <section class="about">
+          <div class="about__info">
+            <p class="about__info-text">
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+              Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="about__info-text--768">Мы успешно работаем с 1992 года и заслужили
+              репутацию надежного партнера<span class="about__info-text--1120">,что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+              родным и близким.</span>
+            </p>
+            <button class="about__info-expand-btn">Читать далее</button>
+          </div>
+          <div class="about__img-wrapper">
+            <img class="about__img" src="assets/images/photo1.png" alt="Вывеска компании и часы работы">
+          </div>
+        </section>
+        <section class="brands">
+      
+          <header class="brands__header">
+            <h2 class="brands__title">Ремонт техники различных брендов</h2>
+          </header>
+      
+          <div class="swiper brands__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper brands__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--lenovo" src="assets/images/brands/lenovo.png" alt="Логотип Lenovo">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--samsung" src="assets/images/brands/samsung.png" alt="Логотип Samsung">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--apple" src="assets/images/brands/apple.png" alt="Логотип Apple">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--viewsonic" src="assets/images/brands/viewsonic.png" alt="Логотип Viewsonic">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--bosch" src="assets/images/brands/bosch.png" alt="Логотип Bosch">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--hp" src="assets/images/brands/hp.png" alt="Логотип HP">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--acer" src="assets/images/brands/acer.png" alt="Логотип Acer">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--sony" src="assets/images/brands/sony.png" alt="Логотип Sony">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--lenovo" src="assets/images/brands/lenovo.png" alt="Логотип Lenovo">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--samsung" src="assets/images/brands/samsung.png" alt="Логотип Samsung">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide brands__swiper-slide">
+                <div class="swiper-slide__wrapper">
+                  <img class="swiper-slide__img swiper-slide__img--apple" src="assets/images/brands/apple.png" alt="Логотип Apple">
+                  <button class="swiper-slide__go-btn" aria-label="Подробнее"></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination brands__swiper-pagination"></div>
+          </div>
+      
+          <div class="brands__expand">
+            <button class="brands__expand-btn" id="brands__expand-btn">
+              <span class="brands__expand-arrow" aria-label="Стрелка для кнопки показать всё"></span>
+              <span class="brands__expand-btn-text">Показать всё</span>
+            </button>
+          </div>
+      
+        </section>
+         
+      </main>
+    </div>
+  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="assets/scripts/swiper-script.js"></script>
 </body>
 </html>

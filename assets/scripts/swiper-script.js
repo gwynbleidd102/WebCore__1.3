@@ -16,7 +16,6 @@ function initSwiper() {
 };
 
 
-
 // Инициализация Swiper при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
   initSwiper();
@@ -34,17 +33,17 @@ window.addEventListener('resize', () => {
   initSwiper();
 });
 
-// функция для кнопки "показать всё"
+// функция для кнопки "показать всё" в слайдере с брендами
 
-const swiperWrapper = document.querySelector('.swiper-wrapper');
-const showAllSlides =  document.getElementById('swiper__expand-btn');
-const arrow = document.querySelector('.swiper__expand-arrow');
-const buttonText = showAllSlides.querySelector('.swiper__expand-btn-text');
+const swiperWrapper = document.querySelector('.brands__swiper-wrapper');
+const showAllSlides =  document.getElementById('brands__expand-btn');
+const arrow = document.querySelector('.brands__expand-arrow');
+const buttonText = showAllSlides.querySelector('.brands__expand-btn-text');
 let isExpanded = false;
 
 showAllSlides.addEventListener('click', ()  => {
-  swiperWrapper.classList.toggle('swiper-wrapper--all-slides');
-  arrow.classList.toggle('swiper__expand-arrow--rotate');
+  swiperWrapper.classList.toggle('brands__swiper-wrapper--all-slides');
+  arrow.classList.toggle('brands__expand-arrow--rotate');
   
   isExpanded = !isExpanded;
   
@@ -56,3 +55,32 @@ showAllSlides.addEventListener('click', ()  => {
   }
 });
 
+
+// скрипт для боковой менюшки
+const body = document.body;
+const sidenavBlock = document.querySelector('.sidenav');
+const burgerToggle = document.querySelector('.header__left-burger-btn');
+const burgerClose = document.querySelector('.mobile-menu__back-btn');
+const transparentBg = document.querySelector('.transparent-bg')
+
+// клик по бургеру
+burgerToggle.addEventListener('click', () => {
+  sidenavBlock.classList.add('burger-toggle');
+  transparentBg.classList.add('transparent-bg--visible');
+  body.classList.add('no-scroll');
+});
+
+// скрытие меню
+burgerClose.addEventListener('click', () => {
+  sidenavBlock.classList.remove('burger-toggle');
+  transparentBg.classList.remove('transparent-bg--visible');
+  body.classList.remove('no-scroll');
+});
+
+//скрытие меню по клику на прозрачную облатсть
+transparentBg.addEventListener('click', (event) => {
+  if(sidenavBlock.contains(event.target)) {
+    sidenavBlock.classList.remove('burger-toggle');
+    body.classList.remove('no-scroll');
+  }
+});
