@@ -53,7 +53,7 @@ li {
 /* sidenav header */
 
 .sidenav {
-  width: 320px;
+  /* width: 320px; */
   height: 100vh;
   appearance: none;
   -webkit-appearance: none;
@@ -113,6 +113,12 @@ li {
   display: flex;
   flex-direction: column;
   z-index: 10;
+}
+
+@media screen and (width: 360px) {
+  .mobile-menu {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -187,17 +193,6 @@ li {
   }
 }
 
-.sidenav__links::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -4px;
-  width: 4px;
-  height: 32px;
-  background: var(--cyan-title);
-  border-radius: 0px 6px 6px 0;
-}
-
 .sidenav__links-item {
   color: var(--black-text);
   font-family: 'TT Lakes Medium' , serif;
@@ -209,13 +204,26 @@ li {
   transform-origin: center;
 }
 
-.sidenav__links-item:not(.sidenav__links-item--current):hover {
-  opacity: 0.7;  
-}
-
 .sidenav__links-item--current {
   color: var(--dark-grey);
 }
+
+.sidenav__links-item--current::before {
+  content: '';
+  position: absolute;
+  transform: translate(-24px, -4px);
+  width: 4px;
+  height: 32px;
+  background: var(--cyan-title);
+  border-radius: 0px 6px 6px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .sidenav__links-item--current::before {
+    transform: translate(-34px, -4px);
+  }
+}
+
 
 .sidenav__links-item:last-child {
   margin-bottom: 32px;
@@ -286,8 +294,8 @@ li {
   margin-bottom: 40px;
 }
 
-.footer-contacts__number:hover {
-  opacity: 0.8;
+.links--hover:not(.sidenav__links-item--current):hover {
+  opacity: 0.7;  
 }
 /*  */
 
@@ -791,6 +799,14 @@ li {
   column-gap: 8px;
 }
 
+.about__info-expand-btn-text {
+  transition: all 0.3s ease;
+}
+
+.about__info-expand-btn-text:hover{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .expand-arrow {
   background-image: url(../images/icons/expand.svg);
   width: 24px;
@@ -801,6 +817,7 @@ li {
 .expand-arrow--rotate {
   transform: rotate(180deg);
 }
+
 
 @media screen and (min-width: 768px) {
   .about__info-expand-btn {
@@ -1038,6 +1055,14 @@ li {
     column-gap: 9px;
   }
   
+  .brands__expand-btn-text {
+    transition: all 0.3s ease;
+  }
+
+  .brands__expand-btn-text:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
