@@ -33,21 +33,49 @@ window.addEventListener('resize', () => {
   initSwiper();
 });
 
+
+// лог. переменная для смены текста 
+let isExpanded = false;
+
+// поворот стрелки
+function rotateArrow(button) {
+  const arrow = button.querySelector('.expand-arrow');
+  arrow.classList.toggle('expand-arrow--rotate');
+}
+
+
+// фукнция для кнопки "читать далее"
+const aboutText = document.querySelector('.about__info-text');
+const readmoreBtn = document.getElementById('about__info-expand-btn');
+const readmoreBtnText = readmoreBtn.querySelector('.about__info-expand-btn-text');
+
+
+readmoreBtn.addEventListener('click', () => {
+  aboutText.classList.toggle('about__info-text--readmore');
+  rotateArrow(readmoreBtn)
+
+  isExpanded = !isExpanded
+
+  if (isExpanded) {
+    readmoreBtnText.textContent = 'Свернуть';
+  } else {
+    readmoreBtnText.textContent = 'Читать далее';
+  }
+});
+
 // функция для кнопки "показать всё" в слайдере с брендами
 
 const swiperWrapper = document.querySelector('.brands__swiper-wrapper');
 const showAllSlides =  document.getElementById('brands__expand-btn');
-const arrow = document.querySelector('.brands__expand-arrow');
 const buttonText = showAllSlides.querySelector('.brands__expand-btn-text');
-let isExpanded = false;
+
 
 showAllSlides.addEventListener('click', ()  => {
   swiperWrapper.classList.toggle('brands__swiper-wrapper--all-slides');
-  arrow.classList.toggle('brands__expand-arrow--rotate');
-  
+  rotateArrow(showAllSlides);
+
   isExpanded = !isExpanded;
   
-  isExpanded = !isExpanded;
   if (isExpanded) {
     buttonText.textContent = 'Скрыть';
   } else {
@@ -84,3 +112,6 @@ transparentBg.addEventListener('click', (event) => {
     body.classList.remove('no-scroll');
   }
 });
+
+
+// 

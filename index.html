@@ -19,10 +19,10 @@
   
         <header class="mobile-menu__header">
           <div class="mobile-menu__left-items">
-            <button class="mobile-menu__back-btn" aria-label="Кнопка закрытия меню"></button>
+            <button class="mobile-menu__back-btn round-btn--hover" aria-label="Кнопка закрытия меню"></button>
             <a href="#" class="mobile-menu__logo" aria-label="Логотип компании CPS"></a>
           </div>
-          <button class="mobile-menu__search-btn" aria-label="Кнопка поиска"></button>
+          <button class="mobile-menu__search-btn round-btn--hover" aria-label="Кнопка поиска"></button>
         </header>
   
         <section class="sidenav__links">
@@ -39,9 +39,9 @@
         <footer class="mobile-menu__footer">
   
           <div class="footer-btns">
-            <button class="footer-btns__call-btn" aria-label="Кнопка заказать звонок"></button>
-            <button class="footer-btns__chat-btn" aria-label="Кнопка формы обратной связи"></button>
-            <button class="footer-btns__profile-btn" aria-label="Кнопка открытия профиля"></button>
+            <button class="footer-btns__call-btn round-btn--hover" aria-label="Кнопка заказать звонок"></button>
+            <button class="footer-btns__chat-btn round-btn--hover" aria-label="Кнопка формы обратной связи"></button>
+            <button class="footer-btns__profile-btn round-btn--hover" aria-label="Кнопка открытия профиля"></button>
           </div>
   
           <div class="footer-contacts">
@@ -64,35 +64,37 @@
 
 
     <div class="content">
+
       <header class="header">
         <div class="header__left-block">
-          <button class="header__left-burger-btn" aria-label="Кнопка открытия меню"></button>
+          <button class="header__left-burger-btn round-btn--hover" aria-label="Кнопка открытия меню"></button>
           <a class="header__logo-img" aria-label="Логотип компании CPS"></a>
         </div>
         <div class="header__right-btns">
           <div class="header__right-hidden-btns">
-            <button class="header__right-call-btn" aria-label="Кнопка заказать звонок"></button>
-            <button class="header__right-message-btn" aria-label="Кнопка формы обратной связи"></button>
-            <button class="header__right-profile-btn" aria-label="Кнопка открытия профиля"></button>
+            <button class="header__right-call-btn round-btn--hover" aria-label="Кнопка заказать звонок"></button>
+            <button class="header__right-message-btn round-btn--hover" aria-label="Кнопка формы обратной связи"></button>
+            <button class="header__right-profile-btn round-btn--hover" aria-label="Кнопка открытия профиля"></button>
           </div>
           <div class="header__right-visible-btns">
-            <button class="header__right-repair-btn" aria-label="Кнопка оставить заявку"></button>
-            <button class="header__right-status-btn" aria-label="Кнопка проверить статус ремонта"></button>
+            <button class="header__right-repair-btn round-btn--hover" aria-label="Кнопка оставить заявку"></button>
+            <button class="header__right-status-btn round-btn--hover" aria-label="Кнопка проверить статус ремонта"></button>
           </div>
         </div>
       </header>
+
       <main class="main">
         <div class="main__title-block">
           <h1 class="main__title">Услуги и сервисы</h1>
           <div class="main__title-btns">
-            <button class="main__title-repair-btn" aria-label="Кнопка оставить заявку">Оставить заявку</button>
-            <button class="main__title-status-btn" aria-label="Кнопка проверить статус ремонта">Статус ремонта</button>
+            <button class="main__title-repair-btn round-btn--hover" aria-label="Кнопка оставить заявку">Оставить заявку</button>
+            <button class="main__title-status-btn round-btn--hover" aria-label="Кнопка проверить статус ремонта">Статус ремонта</button>
           </div>
         </div>
       
         <div class="main__navigation">
           <ul class="navigation__list">
-              <li class="navigation__item navigation__item--current">
+              <li class="navigation__item">
                   <a href="#" class="navigation__link ">Ремонтируемые устройства</a>
               </li>
               <li class="navigation__item">
@@ -115,16 +117,16 @@
       
         <section class="about">
           <div class="about__info">
-            <p class="about__info-text">
-              Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-              Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <p class="about__info-text--768">Мы успешно работаем с 1992 года и заслужили
-              репутацию надежного партнера<span class="about__info-text--1120">,что подтверждает большое количество постоянных клиентов.
-              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-              родным и близким.</span>
-            </p>
-            <button class="about__info-expand-btn">Читать далее</button>
+            <p class="about__info-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+              
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+            <button class="about__info-expand-btn" id="about__info-expand-btn">
+              <span class="about__info-expand-arrow expand-arrow" aria-label="Стрелка для кнопки читать далее"></span>
+              <span class="about__info-expand-btn-text">Читать далее</span>
+            </button>
           </div>
           <div class="about__img-wrapper">
             <img class="about__img" src="assets/images/photo1.png" alt="Вывеска компании и часы работы">
@@ -212,7 +214,7 @@
       
           <div class="brands__expand">
             <button class="brands__expand-btn" id="brands__expand-btn">
-              <span class="brands__expand-arrow" aria-label="Стрелка для кнопки показать всё"></span>
+              <span class="brands__expand-arrow expand-arrow" aria-label="Стрелка для кнопки показать всё"></span>
               <span class="brands__expand-btn-text">Показать всё</span>
             </button>
           </div>
